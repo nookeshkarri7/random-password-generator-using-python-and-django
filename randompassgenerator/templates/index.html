@@ -1,0 +1,62 @@
+<!--Random Password Generator Created by Nookesh-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<style>
+    .bgContainer{
+    padding: 30px;
+    background-color:blueviolet;
+    height: 100vh;
+}
+.card{
+    border-radius: 10px;
+    padding: 17px;
+}
+.heading{
+    color: blueviolet;
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.randomPassword{
+    background-color:darkseagreen;
+    border-radius: 10px;
+    padding: 15px;
+    color:black;
+    font-size: 24px;
+}
+.btngp{
+    border-radius: 10px;
+}
+</style>
+<body>
+<div class="d-flex flex-column justify-content-center bgContainer">
+    <div class="card shadow-lg">
+        <h1 class="heading">Random Password Generator</h1>
+        <p class="randomPassword" id="randomPassword">{{ran}}</p>
+        <form method='GET'>
+            <div class="w-70 mb-5">
+            <label for="selectlength">Enter required Length (between 1 to 45 only) </label>
+        <input type="number" class="form-control" name="selectlength" placeholder="Enter length of password">
+            
+        
+    </div>
+        <button type="submit" class="btn btn-primary btngp" id="generaterandomPass">Generate Random Password</button>
+    </form>
+        <p class="note mt-3"><b>How to use:</b> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click on <b>Generate Random Password button</b> to create Random Password</p>
+        <a href="https://github.com/nookeshkarri7" target="_blank">My Other Projects - Check here </a>
+    </div>
+</div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
