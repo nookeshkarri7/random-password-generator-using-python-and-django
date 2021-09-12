@@ -1,10 +1,9 @@
 from django.shortcuts import render
-from  django.http import  HttpResponse
 import random
-.
+
 def randompassgen(request):
     alphabets = "ABCDEFGH45678IJKLM!@#$%NOPQRSTUVWXYZ!@#$%^&()1234567890"
-    inputNum=request.GET.get('selectlength')
+    inputNum=request.GET.get('selectlength',1)
     if inputNum==None:
         inputNum=0
     else:
